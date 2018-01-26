@@ -16,3 +16,9 @@ Included in app:
 
 * SQLite3 backend
 
+## ToDO
+
+* How to insert new Direction Step in list other than at bottom - i.e., insert new Step4 in 6 Step Directions.
+
+* Can Step Order be changed dynamically in UL?
+

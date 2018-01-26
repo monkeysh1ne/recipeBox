@@ -1,5 +1,6 @@
 class RecipesController < ApplicationController
 	before_action :find_recipe, only: [:show, :edit, :update, :destroy]
+	before_action :recipe_auth, only: [:edit, :update, :destroy]
 
 	def index
 		@recipe = Recipe.all.order("created_at DESC")
@@ -41,11 +42,6 @@ class RecipesController < ApplicationController
 	end
 
 
-
-
-
-
-
 	private
 
 	def recipe_params
@@ -55,6 +51,12 @@ class RecipesController < ApplicationController
 
 	def find_recipe
 		@recipe = Recipe.find(params[:id])
+	end
+
+	def recipe_auth
+		if current_user!=@recipe.user
+			redirect_to root_path, notice: "Only the User who created the Recipe can do this."
+		end
 	end
 end
 

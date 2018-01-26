@@ -1,7 +1,7 @@
 .main-content
 	#recipe_top.row
 		.col-md-4
-			= image_tag @recipe.image.url(:medium, class: "recipe_image")
+			= image_tag @recipe.image.url(:medium), class: "recipe_image"
 		.col-md-8
 			#recipe_info
 				%h1= @recipe.title
