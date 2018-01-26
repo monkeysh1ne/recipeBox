@@ -1,0 +1,10 @@
+= image_tag @recipe.image.url(:medium, class: "recipe_image")
+%h1= @recipe.title
+%p= @recipe.description
+
+= link_to "Back", root_path, class: "btn btn-default"
+= link_to "Edit", edit_recipe_path, class: "btn btn-default"
+-# replace with Bootstrap modal cf. pinboard
+%button.btn.btn-danger{"data-target" => "#exampleModal#{@recipe.id}", "data-toggle" => "modal", type: "button"} Delete
+
+=render 'modal'

@@ -1,0 +1,12 @@
+-# Replaces default modal popup for (eg) deleting Pins
+
+.modal.fade{ id: "exampleModal#{@recipe.id}" }
+	.modal-sm
+		.modal-content
+			.modal-header
+				%h5.modal-title#exampleModalLabel Delete Confirmation
+				%button.close{ "type" => "button", "data-dismiss" => "modal" }
+			.modal-body Are you sure?
+			.modal-footer
+				%button.btn.btn-default{ "type" => "button", "data-dismiss" => "modal" } Cancel
+				=link_to 'Delete', @recipe, method: :delete, class: "btn btn-danger"
