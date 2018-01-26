@@ -1,24 +1,18 @@
-# README
+# RecipeBox
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Originally following along to YouTuber MacKenzie Child's video [Recipe Box](https://www.youtube.com/watch?v=QhdzE1yNs-0&list=PL23ZvcdS3XPLNdRYB_QyomQsShx59tpc-&index=3)
 
-Things you may want to cover:
+Included in app:
 
-* Ruby version
+* Styled using Bootstrap4
 
-* System dependencies
+* Improved modals using Bootstrap
 
-* Configuration
+* User authentication using Devise
 
-* Database creation
+* Image uploading using Paperclip
 
-* Database initialization
+* Dynamic ingredients and instructions using Cocoon nested forms
 
-* How to run the test suite
+* SQLite3 backend
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
