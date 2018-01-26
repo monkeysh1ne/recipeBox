@@ -1,10 +1,35 @@
-= image_tag @recipe.image.url(:medium, class: "recipe_image")
-%h1= @recipe.title
-%p= @recipe.description
+.main-content
+	#recipe_top.row
+		.col-md-4
+			= image_tag @recipe.image.url(:medium, class: "recipe_image")
+		.col-md-8
+			#recipe_info
+				%h1= @recipe.title
+				%p.description= @recipe.description
+				%p
+					Submitted by
+					= @recipe.user.email
 
-= link_to "Back", root_path, class: "btn btn-default"
-= link_to "Edit", edit_recipe_path, class: "btn btn-default"
--# replace with Bootstrap modal cf. pinboard
-%button.btn.btn-danger{"data-target" => "#exampleModal#{@recipe.id}", "data-toggle" => "modal", type: "button"} Delete
+	.row
+		.col-md-6
+			#ingredients
+				%h2 Ingredients
+				%ul
+					- @recipe.ingredients.each do |ingredient|
+						%li= ingredient.name
 
-=render 'modal'
+		.col-md-6
+			#directions
+				%h2 Directions
+				%ul
+					- @recipe.directions.each do |direction|
+						%li= direction.step
+
+	.row
+		.col-md-12
+			= link_to "Back", root_path, class: "btn btn-default"
+			= link_to "Edit", edit_recipe_path, class: "btn btn-default"
+			-# replace with Bootstrap modal cf. pinboard
+			%button.btn.btn-danger{"data-target" => "#exampleModal#{@recipe.id}", "data-toggle" => "modal", type: "button"} Delete
+
+			=render 'modal'

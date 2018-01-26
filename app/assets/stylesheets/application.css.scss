@@ -72,12 +72,12 @@ body {
 	img {
 		width: 100%;
 		-webkit-transition: all .3s ease-out;
-	  -moz-transition: all .3s ease-out;
-	  -o-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-		&:hover {
-			transform: scale(1.075);
-		}
+	  	-moz-transition: all .3s ease-out;
+	  	-o-transition: all .3s ease-out;
+	    transition: all .3s ease-out;
+			&:hover {
+				transform: scale(1.075);
+			}
 	}
 	h2 {
 		padding: 15px 5%;
@@ -125,6 +125,8 @@ body {
 	margin-bottom: 50px;
 	ul, ol {
 		padding-left: 18px;
+		list-style-image: 	url('pencil_icon.png');
+		list-style-position: inside;
 		li {
 			padding: 1em 0;
 			border-bottom: 1px solid #EAEAEA;
