@@ -689,6 +689,7 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (12.3.0)
+    ratyrate (1.2.2.alpha)
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
@@ -770,6 +771,7 @@ DEPENDENCIES
   paperclip (~> 5.2)
   puma (~> 3.7)
   rails (~> 5.1.4)
+  ratyrate (~> 1.2.2.alpha)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.2)
   selenium-webdriver

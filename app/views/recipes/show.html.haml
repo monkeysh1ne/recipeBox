@@ -26,6 +26,21 @@
 						%li= direction.step
 
 	.row
+		.col-md-6
+			#ratings
+				- if current_user
+					%h2 Rate this Recipe!
+					%p
+						%strong Caution: You only get one click on each rating!
+					%h3 Easily sourced ingredients:
+					%p= rating_for @recipe, "easily_sourced_ingredients"
+					%h3 Easily prepared:
+					%p= rating_for @recipe, "ease_of_preparation"
+					%h3 Taste:
+					%p= rating_for@recipe, "taste"
+
+
+	.row
 		.col-md-12
 			= link_to "Back", root_path, class: "btn btn-default"
 			= link_to "Edit", edit_recipe_path, class: "btn btn-default"

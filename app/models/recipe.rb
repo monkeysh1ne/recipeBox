@@ -10,5 +10,6 @@ class Recipe < ApplicationRecord
 	accepts_nested_attributes_for :directions,
 									reject_if: :all_blank,
 									allow_destroy: true
-	validates :title, :description, :image, presence: true 
+	validates :title, :description, :image, presence: true
+	ratyrate_rateable 'easily_sourced_ingredients', 'ease_of_preparation', 'taste' 
 end
