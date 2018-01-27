@@ -55,8 +55,13 @@ body {
 		font-size: 25px;
 		a {
 			color: $red;
+			text-decoration: none;
 		}
 	}
+}
+
+.navbar-brand > a:hover {
+	color: darken($red, 20%);
 }
 
 .recipe {
@@ -149,3 +154,4 @@ body {
 .add-button {
 	margin-top: 25px;
 }
+
