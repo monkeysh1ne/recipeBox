@@ -14,9 +14,9 @@
 		.col-md-6
 			#ingredients
 				%h2 Ingredients
-				%ul
+				%ul.fa-ul
 					- @recipe.ingredients.each do |ingredient|
-						%li= ingredient.name
+						%li=ingredient.name
 
 		.col-md-6
 			#directions

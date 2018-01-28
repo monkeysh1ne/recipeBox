@@ -130,14 +130,34 @@ body {
 	margin-bottom: 50px;
 	ul, ol {
 		padding-left: 18px;
-		list-style-image: 	url('pencil_icon.png');
-		list-style-position: inside;
+		list-style-type: none;
 		li {
 			padding: 1em 0;
 			border-bottom: 1px solid #EAEAEA;
 		}
 	}
 }
+
+#ingredients{
+	li:before{
+		content:"\f0f5"; /*Font-Awesome unicode*/
+		font-family: FontAwesome;
+		display: inline-block;
+		margin-right: 10px;
+		color: $red;
+	}
+}
+
+#directions{
+	li:before{
+		content:"\f0a4"; /*Font-Awesome unicode*/
+		font-family: FontAwesome;
+		display: inline-block;
+		margin-right: 10px;
+		color: $red;
+	}
+}
+
 
 .form-inline {
 	margin-top: 15px;
