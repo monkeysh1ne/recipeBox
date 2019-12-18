@@ -36,7 +36,7 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'haml', '~> 5.0', '>= 5.0.4'
 gem "simple_form", ">= 5.0.0"
 gem 'paperclip', '~> 5.2'
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'bootstrap-sass', '~> 3.4'
 gem 'cocoon', '~> 1.2', '>= 1.2.11'
 gem "devise", ">= 4.7.1"
 gem 'aws-sdk', '~> 3.0', '>= 3.0.1'
