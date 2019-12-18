@@ -38,7 +38,7 @@ gem "simple_form", ">= 5.0.0"
 gem 'paperclip', '~> 5.2'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'cocoon', '~> 1.2', '>= 1.2.11'
-gem 'devise', '~> 4.4', '>= 4.4.1'
+gem "devise", ">= 4.7.1"
 gem 'aws-sdk', '~> 3.0', '>= 3.0.1'
 gem 'sdoc', '~> 0.4.2'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
