@@ -14,14 +14,14 @@
 		.col-md-6
 			#ingredients
 				%h2 Ingredients
-				%ul.fa-ul
+				%ul
 					- @recipe.ingredients.each do |ingredient|
 						%li=ingredient.name
 
 		.col-md-6
 			#directions
 				%h2 Directions
-				%ul
+				%ol
 					- @recipe.directions.each do |direction|
 						%li= direction.step
 

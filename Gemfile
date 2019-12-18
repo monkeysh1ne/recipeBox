@@ -41,6 +41,7 @@ gem 'cocoon', '~> 1.2', '>= 1.2.11'
 gem 'devise', '~> 4.4', '>= 4.4.1'
 gem 'aws-sdk', '~> 3.0', '>= 3.0.1'
 gem 'sdoc', '~> 0.4.2'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
 
 
 group :development, :test do

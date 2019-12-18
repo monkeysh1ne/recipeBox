@@ -17,6 +17,7 @@
 /*"bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"*/
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
 
 @mixin box-shadow {
 	-webkit-box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
@@ -128,9 +129,16 @@ body {
 
 #ingredients, #directions {
 	margin-bottom: 50px;
-	ul, ol {
+	ul {
 		padding-left: 18px;
 		list-style-type: none;
+		li {
+			padding: 1em 0;
+			border-bottom: 1px solid #EAEAEA;
+		}
+	}
+	ol {
+		padding-left: 18px;
 		li {
 			padding: 1em 0;
 			border-bottom: 1px solid #EAEAEA;
@@ -140,21 +148,10 @@ body {
 
 #ingredients{
 	li:before{
-		content:"\f0f5"; /*Font-Awesome unicode*/
+		content:"\f0da"; /*Font-Awesome unicode*/
 		font-family: FontAwesome;
 		display: inline-block;
 		margin-right: 10px;
-		color: $red;
-	}
-}
-
-#directions{
-	li:before{
-		content:"\f0a4"; /*Font-Awesome unicode*/
-		font-family: FontAwesome;
-		display: inline-block;
-		margin-right: 10px;
-		color: $red;
 	}
 }
 
