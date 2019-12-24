@@ -1,4 +1,5 @@
 class Recipe < ApplicationRecord
+	has_many :comments, as: :commentable
 	has_many :ingredients, dependent: :delete_all
 	has_many :directions, dependent: :delete_all
 	belongs_to :user

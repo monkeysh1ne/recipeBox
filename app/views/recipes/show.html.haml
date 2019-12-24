@@ -24,6 +24,11 @@
 				%ol
 					- @recipe.directions.each do |direction|
 						%li= direction.step
+	.row
+		.col-md-12
+			=render partial: 'comments/comments', locals: {commentable: @recipe}
+			=render partial: 'comments/form', locals: {commentable: @recipe}
+			%br/
 
 	.row
 		.col-md-12
