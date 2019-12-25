@@ -42,6 +42,7 @@ gem "devise", ">= 4.7.1"
 gem 'aws-sdk', '~> 3.0', '>= 3.0.1'
 gem 'sdoc', '~> 0.4.2'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
+gem 'comments'
 
 
 group :development, :test do

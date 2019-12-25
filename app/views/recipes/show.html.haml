@@ -26,6 +26,10 @@
 						%li= direction.step
 
 	.row
+		.well
+			= comments_tag(@recipe)
+
+	.row
 		.col-md-12
 			= link_to "Back", root_path, class: "btn btn-default"
 			= link_to "Edit", edit_recipe_path, class: "btn btn-default"

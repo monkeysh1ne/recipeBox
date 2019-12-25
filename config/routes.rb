@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   resources :recipes
 
   root "recipes#index"
+
+  # for comments system
+  mount Comments::Engine => "/comments"
 end
