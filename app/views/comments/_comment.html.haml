@@ -1,5 +1,5 @@
 .well
-  User_id:
-  = comment.user_id
+  -# %p.strong
+  =comment.user.name
   commented
-  = simple_format comment.body
+  =simple_format comment.body
