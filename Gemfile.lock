@@ -1303,7 +1303,7 @@ DEPENDENCIES
   mimemagic (~> 0.3.9)
   paperclip (~> 5.2)
   puma (>= 3.12.2)
-  rails (~> 5.1.4)
+  rails
   sass-rails (~> 5.0)
   sdoc (~> 0.4.2)
   selenium-webdriver
