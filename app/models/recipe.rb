@@ -11,4 +11,7 @@ class Recipe < ApplicationRecord
 									reject_if: :all_blank,
 									allow_destroy: true
 	validates :title, :description, :image, presence: true 
+
+	acts_as_commontable dependent: :destroy
+
 end

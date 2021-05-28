@@ -7,7 +7,7 @@ class RecipesController < ApplicationController
 	end
 
 	def show
-
+		commontator_thread_show(@commontable)
 	end
 
 	def new

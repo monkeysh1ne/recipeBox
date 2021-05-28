@@ -24,6 +24,9 @@
 				%ol
 					- @recipe.directions.each do |direction|
 						%li= direction.step
+	.row
+		.col-md-12 
+			- commontator_thread(@commontable)
 
 	.row
 		.col-md-12
@@ -33,3 +36,5 @@
 			%button.btn.btn-danger{"data-target" => "#exampleModal#{@recipe.id}", "data-toggle" => "modal", type: "button"} Delete
 
 			=render 'modal'
+
+

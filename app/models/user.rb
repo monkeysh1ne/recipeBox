@@ -5,4 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :recipes, dependent: :delete_all
+
+  acts_as_commontator
+
 end
