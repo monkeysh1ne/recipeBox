@@ -55,5 +55,5 @@ development:
   database: recipedb
   pool: 5
   username: recipebox
-  password: tararuas13
+  password: 5treetLegal20
   host: localhost
