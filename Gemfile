@@ -7,6 +7,7 @@ end
 
 
 gem 'rails', '~> 5.1.4'
+# gem 'rails', '~> 6.1', '>= 6.1.3.2'
 # gem 'sqlite3'
 # gem "puma", ">= 3.12.2"
 
