@@ -28,6 +28,7 @@
 		.col-md-8
 			#comments
 				%h3 Comments
+				%hr
 				= render partial: 'recipes/comment', collection: @recipe.comments.reverse
 				= render partial: 'comments/form'
 

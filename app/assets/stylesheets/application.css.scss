@@ -25,6 +25,12 @@
   box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
 }
 
+@mixin comment-box-shadow {
+  -webkit-box-shadow: inset 5px 5px 2px -5px #4d4c4c;
+  -moz-box-shadow: inset 5px 5px 2px -5px #4d4c4c;
+  box-shadow: inset 5px 5px 2px -5px #4d4c4c;
+}
+
 $red: #db6161;
 
 body {
@@ -110,6 +116,13 @@ body {
   min-height: 360px;
   border-radius: 5px;
   padding: 2em 8%;
+}
+
+#individual_comment {
+  @include comment-box-shadow;
+  border-radius: 15px;
+  margin: 2rem;
+  padding: 1rem;
 }
 
 .recipe_image {

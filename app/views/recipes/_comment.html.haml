@@ -1,3 +1,7 @@
-%div
-  %h5.author= comment.author_name
-  %p.comment= comment.body
+%div#individual_comment
+  %h5
+    %strong Name:
+    = comment.author_name
+  %p
+    %strong Comment:
+    = comment.body
