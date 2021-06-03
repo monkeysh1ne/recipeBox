@@ -24,6 +24,12 @@
 				%ol
 					- @recipe.directions.each do |direction|
 						%li= direction.step
+	.row
+		.col-md-8
+			#comments
+				%h3 Comments
+				= render partial: 'recipes/comment', collection: @recipe.comments.reverse
+				= render partial: 'comments/form'
 
 	.row
 		.col-md-12
