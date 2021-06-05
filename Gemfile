@@ -6,8 +6,8 @@ git_source(:github) do |repo_name|
 end
 
 
-gem 'rails', '~> 5.1.4'
-# gem 'rails', '~> 6.1', '>= 6.1.3.2'
+# gem 'rails', '~> 5.1.4'
+gem 'rails', '~> 6.1', '>= 6.1.3.2'
 # gem 'sqlite3'
 # gem "puma", ">= 3.12.2"
 
@@ -19,7 +19,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'haml', '~> 5.0', '>= 5.0.4'
-gem "simple_form", ">= 5.0.0"
+gem 'simple_form', '~> 5.1'
+# gem "simple_form", ">= 5.0.0"
 gem 'paperclip', '~> 5.2'
 gem 'bootstrap-sass', '~> 3.4'
 gem 'cocoon', '~> 1.2', '>= 1.2.11'
