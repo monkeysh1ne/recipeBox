@@ -4,21 +4,20 @@ Originally following along to YouTuber MacKenzie Child's video [Recipe Box](http
 
 Included in app:
 
-* Styled using Bootstrap4
+- Styled using Bootstrap4
 
-* Improved modals using Bootstrap
+- Improved modals using Bootstrap
 
-* User authentication using Devise
+- User authentication using Devise
 
-* Image uploading using Paperclip
+- Image uploading using Paperclip
 
-* Dynamic ingredients and instructions using Cocoon nested forms
+- Dynamic ingredients and instructions using Cocoon nested forms
 
-* SQLite3 backend
+- PostgresDB backend
 
-## ToDO
+## ToDo
 
-* How to insert new Direction Step in list other than at bottom - i.e., insert new Step4 in 6 Step Directions.
+- Rewrite comments using simpleform
 
-* Can Step Order be changed dynamically in UL?
-
+- Can Step Order be changed dynamically in UL?
