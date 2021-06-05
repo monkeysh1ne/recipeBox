@@ -12,7 +12,7 @@
 -#   %p 
 -#     = f.submit 'Submit'
 
-= simple_form for [@recipe, @comment] do |f|
+= simple_form_for [@recipe, @comment] do |f|
   = f.input :author_name, label: "Your Name"
   = f.input :body, label: "Comment..."
   = f.button :submit
