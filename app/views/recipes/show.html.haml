@@ -29,9 +29,8 @@
 			#comments
 				%h3 Comments(#{@recipe.comments.size})
 				%hr
-				-# - if @recipe.comment.persisted?
-				= render partial: 'recipes/comment', collection: @recipe.comments.reverse
 				= render partial: 'comments/form'
+				= render partial: 'recipes/comment', collection: @recipe.comments
 	%br/
 	.row
 		.col-md-12

@@ -1,18 +1,6 @@
 %h4 Post a Comment
 
--# = form_for [ @recipe, @comment ] do |f|
--#   %p
--#     = f.label :author_name, "Your Name"
--#     %br/
--#     = f.text_field :author_name
--#   %p 
--#     = f.label :body, "Comment..."
--#     %br/
--#     = f.text_area :body
--#   %p 
--#     = f.submit 'Submit'
-
-= simple_form_for [@recipe, @comment], validate: true do |f|
-  = f.input :author_name, label: "Your Name", error: "You must provide a name."
-  = f.input :body, label: "Comment...", error: "You cannot post a blank comment!"
+= simple_form_for [@recipe, @recipe.comments.build], validate: true do |f|
+  = f.input :author_name, label: "Your Name"
+  = f.input :body, label: "Comment..."
   = f.button :submit
